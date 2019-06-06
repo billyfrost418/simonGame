@@ -27,6 +27,17 @@ $(document).keydown(function() {
   }
 });
 
+// button for start game
+$(".start-btn").click(function() {
+  if (started === false) {
+    $("#level-title").text("Level " + level);
+    nextSequence();
+    started = true;
+  }
+});
+
+
+
 // check answer every time clicking buttons
 function checkAnswer(currentLevel) {
   // answer is right
@@ -40,7 +51,7 @@ function checkAnswer(currentLevel) {
   } else { // wrong answer
     playSound("wrong");
     $("body").addClass("game-over");
-    $("#level-title").text("Game Over, Press Any Key to Restart");
+    $("#level-title").text("Game Over, Your score is: "+ level +"\nPress Any Key to Restart");
     setTimeout(function() {
       $("body").removeClass("game-over");
     }, 200);
