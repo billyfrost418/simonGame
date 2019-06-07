@@ -139,6 +139,16 @@ function encourage(score) {
       $(".below-title").text("You own my heart!");
       break;
     default: $(".below-title").text("😁");
-
   }
 }
+
+$(".dropbtn").click(function(){
+  $(".dropdown-content").toggle();
+});
+
+$("#signature").hover(function(){
+$("#signature").text("Le Bao Khanh");
+ setTimeout(function(){
+   $("#signature").text("from K🤖ne");
+ }, 680);
+});
