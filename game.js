@@ -106,7 +106,7 @@ function startOver() {
 function encourage(score) {
   switch (score) {
     case 0:
-      $(".below-title").text("Tab the blink button!");
+      $(".below-title").text("Tab the blinking button!");
       break;
     case 1:
       $(".below-title").text("Well done");
