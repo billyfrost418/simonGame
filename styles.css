@@ -1,8 +1,16 @@
 body {
   text-align: center;
-  background-color: #6384b3;
+  /* background-color: #282d4f; */
   font-family: 'Press Start 2P', cursive;
-  color: #FEF2BF;
+  color: #fff;
+  background: rgb(118,64,247);
+  background: radial-gradient(circle, rgba(118,64,247,1) 11%, rgba(87,47,190,1) 59%, rgba(56,34,168,0.9452731776304272) 95%);
+}
+
+@media (max-width: 938px) {
+  #signature {
+    text-align: right
+  }
 }
 
 #level-title {
@@ -14,60 +22,117 @@ body {
   font-size: 1.5rem;
   margin: 1%;
   text-align: right;
+  margin: 0 4rem 0 0;
+}
+
+.neon {
+  color: #fff;
+  font-size: 8em;
+  text-shadow:
+    0 0  2px #fff,
+    0 0  5px #fff,
+    0 0  5px #fff,
+    0 0  15px #dbff3d,
+    0 0  30px #dbff3d,
+    0 0  35px #dbff3d,
+    0 0  50px #dbff3d,
+    0 0  75px #dbff3d
 }
 
 .container {
   display: block;
   width: 50%;
   margin: auto;
+}
 
+.below-title {
+  margin: 1rem auto;
+  font-size: 1rem;
 }
 
 .btn {
-  margin: 25px;
+  margin: 1.6rem;
   display: inline-block;
-  height: 200px;
-  width: 200px;
-  border: 10px solid black;
-  border-radius: 20%;
+  height: 10rem;
+  width: 10rem;
+  border: 0.2rem solid #a7ff83;
+  border-radius: 18%;
+}
+
+.neon-box {
+  box-shadow:
+    0 0  2px #fff,
+    0 0  5px #fff,
+    0 0  5px #fff,
+    0 0  7px #dbff3d,
+    0 0  14px #dbff3d,
+    0 0  18px #dbff3d,
+    0 0  30px #dbff3d,
+    0 0  45px #dbff3d
 }
 
 .start-btn {
-  margin: 25px;
   display: inline-block;
   height: 80px;
   width: 200px;
-  border: 2px solid #854777;
-  border-radius: 10%;
-  background-color: #ffc6be;
+  border: 2px solid #009975;
+  border-radius: 60%;
+  background-color: #9df3c4;
   font-family: 'Press Start 2P', cursive;
-  font-size: 2.2rem;
-  color: #854777;
+  font-size: 1.8rem;
+  color: #009975;
+  margin: 3.2rem auto 0;
 }
 
 .start-btn:hover {
-  background-color: #ffa1c5;
+  background-color: #b0e0a8;
+  box-shadow:
+    0 0  2px #fff,
+    0 0  5px #fff,
+    0 0  5px #fff,
+    0 0  10px #dbff3d,
+    0 0  18px #dbff3d,
+    0 0  14px #dbff3d,
+    0 0  50px #dbff3d,
+    0 0  70px #dbff3d
 }
 
 .game-over {
-  background-color: red;
+  background: rgb(247,64,72);
+  background: radial-gradient(circle, rgba(247,64,72,0.9424720571822479) 25%, rgba(240,9,9,1) 59%, rgba(247,2,4,0.9452731776304272) 95%);
   opacity: 0.8;
 }
 
 .red {
-  background-color: red;
+  background-color: #9c2c2c;
+}
+
+.red:hover {
+  background-color: #fe5f55;
 }
 
 .green {
-  background-color: green;
+  background-color: #009975;
+}
+
+.green:hover{
+  background-color: #62d2a2;
 }
 
 .blue {
-  background-color: blue;
+  background-color: #145374;
+}
+
+.blue:hover {
+  background-color: #6fc2d0;
 }
 
 .yellow {
-  background-color: yellow;
+  background-color: #ffa323;
+}
+
+.yellow:hover {
+  background-color: #f9fd50;
 }
 
 .pressed {
